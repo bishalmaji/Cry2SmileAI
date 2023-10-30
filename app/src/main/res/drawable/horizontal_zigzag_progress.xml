@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:id="@android:id/background">
+        <shape
+            android:shape="rectangle">
+            <solid android:color="#CCCCCC"/> <!-- Background color -->
+        </shape>
+    </item>
+    <item android:id="@android:id/progress">
+        <clip>
+            <rotate
+                android:fromDegrees="45"
+                android:toDegrees="45">
+                <shape
+                    android:shape="rectangle">
+                    <solid android:color="#2196F3"/> <!-- Progress color -->
+                </shape>
+            </rotate>
+        </clip>
+    </item>
+</layer-list>

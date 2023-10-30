@@ -1,0 +1,196 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/intro_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+
+    tools:context=".IntroSliderAtivity">
+
+    <com.flaviofaria.kenburnsview.KenBurnsView
+        android:id="@+id/is_i1"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:backgroundTint="#FF9800"
+        android:scaleType="centerCrop"
+        android:src="@drawable/ai_b1"
+        android:visibility="visible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <com.flaviofaria.kenburnsview.KenBurnsView
+        android:id="@+id/is_i2"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="centerCrop"
+        android:src="@drawable/ai_b2"
+        android:visibility="gone"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <com.flaviofaria.kenburnsview.KenBurnsView
+        android:id="@+id/is_i3"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="centerCrop"
+        android:src="@drawable/ai_b3"
+        android:visibility="gone"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/is_d3"
+        android:layout_width="10dp"
+        android:layout_height="10dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginBottom="100dp"
+        android:background="@drawable/bg_circle"
+        android:backgroundTint="#FFC107"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/is_d2"
+        tools:srcCompat="@tools:sample/backgrounds/scenic" />
+
+
+    <ImageView
+        android:id="@+id/is_d2"
+        android:layout_width="10dp"
+        android:layout_height="10dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginBottom="100dp"
+        android:background="@drawable/bg_circle"
+        android:backgroundTint="#FFC107"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/is_d1"
+        tools:srcCompat="@tools:sample/backgrounds/scenic" />
+
+    <ImageView
+        android:id="@+id/is_d1"
+        android:layout_width="10dp"
+        android:layout_height="10dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginBottom="100dp"
+        android:background="@drawable/bg_circle"
+        android:backgroundTint="#FFC107"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:srcCompat="@tools:sample/backgrounds/scenic" />
+
+    <Button
+        android:id="@+id/intro_nxt_btn"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="32dp"
+        android:drawableEnd="@drawable/baseline_arrow_right_alt_24"
+        android:drawableTint="@color/white"
+        android:text="Next"
+        app:layout_constraintBottom_toBottomOf="@+id/is_d3"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/is_d3"
+        app:strokeColor="#000000"
+        app:strokeWidth="1dp" />
+
+    <LinearLayout
+        android:id="@+id/is_l3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="70dp"
+        android:background="@drawable/bg_square"
+        android:orientation="vertical"
+        android:padding="5dp"
+        android:visibility="gone"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:id="@+id/l3_t1"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:maxWidth="250dp"
+            android:padding="5dp"
+            android:text="Analize Baby's Voice \nand Extract usefull information"
+            android:textColor="#FFC107"
+            android:textSize="22sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/l3_t2"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:padding="5dp"
+            android:text="This is test data" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/is_l2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="70dp"
+        android:background="@drawable/bg_square"
+        android:orientation="vertical"
+        android:padding="5dp"
+        android:visibility="gone"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:id="@+id/l2_t1"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:maxWidth="250dp"
+            android:padding="5dp"
+            android:text="Analize Baby's Voice \nand Extract usefull information"
+            android:textColor="#FFC107"
+            android:textSize="22sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/l2_t2"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:padding="5dp"
+            android:text="This is test data" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/is_l1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="70dp"
+        android:background="@drawable/bg_square"
+        android:orientation="vertical"
+        android:padding="5dp"
+        android:visibility="visible"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:id="@+id/l1_t1"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:maxWidth="250dp"
+            android:padding="5dp"
+            android:text="Analize Baby's Voice \nand Extract usefull information"
+            android:textColor="#FFC107"
+            android:textSize="22sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/l1_t2"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:padding="5dp"
+            android:text="This is test data" />
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
